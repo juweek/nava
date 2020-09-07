@@ -1,0 +1,19 @@
+/*
+------------------------------
+this is the css for the navbar and the footer
+------------------------------
+*/
+.nv-navbar,
+.nv-footer {
+    background-color: $navbar-bg;
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0px 20px;
+
+    img {
+        max-width: 100px;
+        vertical-align: middle;
+    }
+}

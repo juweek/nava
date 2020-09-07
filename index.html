@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Government Exercise for Nava</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <!--
+        THE NAVBAR
+        -->
+        <div class="nv-navbar">
+            <div class="nv-navbar-logo">
+                <img src="css/healthcare_logo.png">
+            </div>
+            <div class="nv-navbar-logout">Logout</div>
+        </div>
+
+
+        <!--
+        THE CENTER BOX
+        -->
+        <div class="nv-body">
+            <h2>Your household</h2>
+            <h3>Welcome to the marketplace. Review your household below</h3>
+            <div class="nv-households">
+                <div class="nv-households-list"></div>
+                <div class="nv-households-button nv-button">
+                    Add new member
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        THE FOOTER
+        -->
+        <div class="nv-footer">
+            <div class="nv-footer-text">The Marketplace is a work in progress</div>
+        </div>
+
+
+        <!--
+        THE MODAL
+        -->
+        <div id="modalItems">
+            <div class="modalItems--box">
+                <span class="close">
+                    <svg class='uit-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M34.44 33.24l-1 1L25 26.9l-8.26 7.54-1.21-1.21L23.08 25l-7.52-8.24 1.21-1.21L25 23.08l8.24-7.52 1.21 1.21L26.92 25z"/></svg>
+                </span>
+                <div>
+                    Hi, please enter the following information to add a member. Remember that you must fill out every field in order to add that member.
+                </div>
+                <div class="modalItems--form">
+                    <div>
+                        <input
+                        class="modalItems--form--field" data-value="firstName" placeholder="First name" title="Enter in your first name">
+                        <input class="modalItems--form--field" data-value="lastName" placeholder="Last name" title="Enter in your surname">
+                    </div>
+                    <input class="modalItems--form--field" placeholder="Write a description" data-value="description" title="Write out a description of this household member">
+                    <select class="modalItems--form--field" data-value="fruit">
+                        <option selected disabled></option>
+                        <option value="apple">apple</option>
+                        <option value="orange">orange</option>
+                        <option value="banana">banana</option>
+                        <option value="occupation">kiwi</option>
+                    </select>
+                </div>
+                <div id="modal-button" class="nv-button">
+                    Add household member
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
